@@ -1,29 +1,29 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
-import java.util.Scanner;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		int [][] f = new int[42][2];
-		f[0][0] = 1;
-		f[1][1] = 1;
-		for (int i = 2; i < 41; i++) {
-			for(int j = 0; j < 2; j++) {
-				f[i][j] = f[i-1][j] + f[i -2][j];
-			}
-		}
-		for(int i = 0; i < num; i++) {
-			int a = sc.nextInt();
-			System.out.println(f[a][0]+ " " +f[a][1]);
-		}
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int n = Integer.parseInt(br.readLine().trim());
+		int z = n;
 		
-		sc.close();
+		for (int i=1; i<=n+1; i++) {
 			
+			bw.write(z+ "\n");
+			z = z-1;
+			
+		}
 		
-
+		bw.flush();
+		bw.close();
+	
+		
+		
 	}
-
 }

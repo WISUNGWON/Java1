@@ -1,6 +1,10 @@
 package com.javalec.ex;
 
 import java.io.IOException;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +25,23 @@ public class Servlet1 extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
+    
+
+        @PostConstruct
+        public void beforeInit() {
+        	System.out.println("PostConstruct");
+        }
+    	public void init(ServletConfig config) throws ServletException {
+    		System.out.println("Init");
+    	}
+    	public void destroy() {
+    		System.out.println("Destory");
+    	}
+        @PreDestroy
+        public void afterDestroy() {
+        	System.out.println("PreDestroy");
+        }
+ 
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -29,11 +50,10 @@ public class Servlet1 extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		String id = getServletContext().getInitParameter("id");
-		String pw = getServletContext().getInitParameter("pw");
+	
 		
-		System.out.println(" id " + id);
-		System.out.println(" pw " + pw);
+		System.out.println(" doget");
+
 	}
 
 	/**

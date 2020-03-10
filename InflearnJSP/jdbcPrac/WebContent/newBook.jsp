@@ -8,8 +8,11 @@
 </head>
 <body>
 	<form action="newBook" method="post">
-		book name : <input type="text" name="book_name"></br>
-		book location : <input type="text" name="book_loc"></br>
+		member id : <input type="text" name="member_id"></br>
+		member pw : <input type="text" name="member_pw"></br>
+		member name: <input type="text" name="member_name"></br>
+		member phone : <input type="text" name="member_phone"></br>
+		
 		<input type="submit" value="book register">
 	</form>
 

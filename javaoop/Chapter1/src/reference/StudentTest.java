@@ -1,19 +1,36 @@
-package reference;
+package reference;import java.util.Calendar;
 
 public class StudentTest {
 
 	public static void main(String[] args) {
 		
 		Student studentLee = new Student(100, "Lee");
-		studentLee.setKoreaSubject("±¹¾î", 100);
-		studentLee.setMathSubject("¼öÇÐ", 95);
+//		studentLee.setKoreaSubject("ï¿½ï¿½ï¿½ï¿½", 100);
+//		studentLee.setMathSubject("ï¿½ï¿½ï¿½ï¿½", 95);
+		Subject sub = new Subject(); //ï¿½Ì°Íµï¿½ ï¿½á±¹ ï¿½Ê±ï¿½È­ï¿½ï¿½ ï¿½Ñ°ï¿½
 		
-		Student studentKim = new Student(101, "kim");
-		studentKim.setKoreaSubject("±¹¾î", 80);
-		studentKim.setMathSubject("¼öÇÐ", 95);
+		studentLee.korea = sub;
+		studentLee.korea.score = 100;
+
+		System.out.println(studentLee.korea.score);
+//		studentLee.korea.setSubject("ï¿½ï¿½ï¿½ï¿½", 100);
+//		studentLee.math.setSubject("ï¿½ï¿½ï¿½ï¿½", 95);
+//
+//		
+//		Student studentKim = new Student(101, "kim");
+////		studentKim.setKoreaSubject("ï¿½ï¿½ï¿½ï¿½", 80);
+////		studentKim.setMathSubject("ï¿½ï¿½ï¿½ï¿½", 95);
+//		studentKim.korea.setSubject("ï¿½ï¿½ï¿½ï¿½", 95);
+//		System.out.println(studentKim.math.score);
+//		studentKim.math.setSubject("ï¿½ï¿½ï¿½ï¿½", 50);
+//	
+//		
+//		System.out.println(studentLee.korea.score);
+//		System.out.println(studentKim.math.score);
+//		studentLee.showStudentScore();
+//		studentKim.showStudentScore();
 		
-		studentLee.showStudentScore();
-		studentKim.showStudentScore();
+		System.out.println(Calendar.getInstance().get(Calendar.YEAR)));
 
 	}
 

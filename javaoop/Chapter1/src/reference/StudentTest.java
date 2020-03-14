@@ -1,4 +1,5 @@
-package reference;import java.util.Calendar;
+package reference;
+import java.util.Calendar;
 
 public class StudentTest {
 
@@ -30,7 +31,7 @@ public class StudentTest {
 //		studentLee.showStudentScore();
 //		studentKim.showStudentScore();
 		
-		System.out.println(Calendar.getInstance().get(Calendar.YEAR)));
+		System.out.println(Calendar.getInstance().get(Calendar.YEAR));
 
 	}
 

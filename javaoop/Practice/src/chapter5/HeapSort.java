@@ -13,6 +13,10 @@ public class HeapSort implements Sort {
         // TODO Auto-generated method stub
         
     }
+    
+    public void description() {
+        System.out.println("HeapSort 알고리즘 입니다..");
+    }
 
     
 }

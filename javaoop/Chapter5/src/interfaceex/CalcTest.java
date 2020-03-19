@@ -18,6 +18,14 @@ public class CalcTest {
         int[] arr = {1, 2, 3, 4, 5};
         int sum = Calc.total(arr);
         System.out.println(sum);
+        
+        CompleteCalc calc2 = new CompleteCalc();
+        Calc.total(arr);
+        //static으로 선언된 변수나 메서드는 오버라이드 할 수 없다. 클래스에 소속되어 있는 변수이기 때문에.
+        // 인스턴스는 메서드를 정의하지 않은 코드들이 남아 있기 때문에 인스턴스화 할 수 없다. 따라서 타입만 참고할 수 있다.
+        
+        calc.test();
+  
 
     }
 

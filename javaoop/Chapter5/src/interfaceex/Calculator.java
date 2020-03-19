@@ -25,6 +25,5 @@ public abstract class Calculator implements Calc {
         return 0;
     }
 
-   
 
 }

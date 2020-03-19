@@ -18,7 +18,7 @@ public interface Calc {
     }
     
     //인스턴스 생성과 상관없이 사용가능.
-    static int total(int[] arr) {
+    public static int total(int[] arr) {
         int total = 0;
         
         for (int i : arr) {
@@ -26,6 +26,10 @@ public interface Calc {
         }
         //mystaticMethod();
         return total;
+    }
+    
+    default void test() {
+        System.out.println("이건 디폴트값");
     }
     
     //java 9이상에서만 사용 가능 

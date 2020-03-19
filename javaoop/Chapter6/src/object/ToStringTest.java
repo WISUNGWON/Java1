@@ -4,10 +4,12 @@ package object;
 class Book implements Cloneable{
     String title;
     String author;
+    int bookNum = 1000;
     
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
+        bookNum++;
     }
     
     public String toString() {
@@ -40,9 +42,12 @@ public class ToStringTest {
         
         String str = new String("토지");
         System.out.println(str.toString()); 
+        System.out.println(str);
         
         Book book2 = (Book)book.clone();
         System.out.println(book2);
+        System.out.println(book.bookNum); //toString은 참조변수 자체를 출력하기 위함!
+        
         
     }
 

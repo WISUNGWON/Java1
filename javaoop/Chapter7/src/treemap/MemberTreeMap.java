@@ -1,24 +1,24 @@
-package hashmap;
+package treemap;
 
-import java.util.HashMap;
 import java.util.Iterator;
+import java.util.TreeMap;
 
-public class MemberHashMap {
+public class MemberTreeMap {
     
-    private HashMap<Integer, Member> hashMap;
+    private TreeMap<Integer, Member> treeMap;
     
-    public MemberHashMap() {
-        hashMap = new HashMap<Integer, Member>();
+    public MemberTreeMap() {
+        treeMap = new TreeMap<Integer, Member>();
     }
     
     public void addMember(Member member) {
-        hashMap.put(member.getMemberId(), member);
+        treeMap.put(member.getMemberId(), member);
     }
     
     public boolean removeMember(int memberId) {
         //cotansKey() : 해당 키가 hashMap에 존재하는지 확인
-        if (hashMap.containsKey(memberId)) {
-            hashMap.remove(memberId);
+        if (treeMap.containsKey(memberId)) {
+            treeMap.remove(memberId);
             return true;
         }
         System.out.println("회원 번호가 없습니다.");
@@ -29,10 +29,10 @@ public class MemberHashMap {
     public void showAllmember() {
         
         //모든 key 객체를 set 타입으로 반환해줌
-        Iterator<Integer> ir = hashMap.keySet().iterator();
+        Iterator<Integer> ir = treeMap.keySet().iterator();
         while (ir.hasNext()) {
             int key = ir.next();
-            Member member = hashMap.get(key);
+            Member member = treeMap.get(key);
             System.out.println(member);
         }
         System.out.println();

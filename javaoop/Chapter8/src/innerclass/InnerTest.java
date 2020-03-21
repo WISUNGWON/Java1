@@ -18,9 +18,8 @@ class OutClass{
             System.out.println(sNum);
         }
         /* static int sInNum = 200;
-         * 인스턴스 내부 클래스는
-         * 클래스 생성 이후에 class의 맴버를 사용할 수 있기 때문에
-         * 언제나 사용 가능한 static 변수로 선언할 수 없다. 
+         * 인스턴스 내부 클래스는 클래스 생성 이후에 class의 맴버를 사용할 수 있기 때문에
+         * 언제나 사용 가능한 static 변수를 선언할 수 없다. 
          */       
          
     }
@@ -29,6 +28,7 @@ class OutClass{
         inClass.inTest();
     }
     
+    //정적 내부 클래스
     static class InstaticClass{
         int inNum = 100;
         static int sInNum = 200;

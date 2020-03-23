@@ -57,7 +57,8 @@ public class InnerTest {
         //OutClass 생성과 동시에 inClass도 생성됨.
         OutClass outClass = new OutClass();
         outClass.usingInner();
-        
+       
+       
         //InClass는 인스턴스 클래스이기 때문에 OutClass. 으로 불러와야 한다.
         //외부 클래스는 언제나 static이기 때문에 OutClass처럼 불러올 수 있다.
         OutClass.InClass myInClass = outClass.new InClass();

@@ -21,9 +21,10 @@ public class MemberHashMap {
             hashMap.remove(memberId);
             return true;
         }
-        System.out.println("회원 번호가 없습니다.");
-        return false;
-        
+        else {
+            System.out.println("회원 번호가 없습니다.");
+            return false;
+        }
     }
     
     public void showAllmember() {

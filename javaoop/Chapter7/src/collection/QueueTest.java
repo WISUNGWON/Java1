@@ -9,7 +9,7 @@ class MyQueue {
     public String dequeue() {
         int len = arrayQueue.size();
         if (len == 0) {
-            System.out.println("스택이 비었습니다.");
+            System.out.println("Queue is empty.");
             return null;
         }
         return arrayQueue.remove(0);

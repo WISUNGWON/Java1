@@ -14,7 +14,7 @@ public class GenericPrinterTest {
         plasticPrinter.setMaterial(plastic);
         System.out.println(plasticPrinter);
         
-      //GenericPrinter<Water> waterPrinter = new GenericPrinter<Water>();
+//      GenericPrinter<Water> waterPrinter = new GenericPrinter<Water>();
         
         powderPrinter.printing();
         plasticPrinter.printing();

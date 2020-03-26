@@ -15,6 +15,7 @@ public class MemberHashMapTest {
         manager.addMember(memberLee);
         manager.addMember(memberKim);
         manager.addMember(memberPark);
+        manager.addMember(memberPark2); //key는 중복되지 않음.
    
         
         manager.showAllmember();

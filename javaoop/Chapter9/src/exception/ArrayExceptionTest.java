@@ -7,7 +7,7 @@ public class ArrayExceptionTest {
         
         int[] arr = new int[5];
         
-        /* 예외 처리를 하면, 프로그램이 죽지않고, 
+        /* 예외 처리를 하면, 프로그램이 죽지않고
          * 예외 부분만 지시한대로 남긴뒤 끝까지 프로그램을 실행함.
          * 
          */

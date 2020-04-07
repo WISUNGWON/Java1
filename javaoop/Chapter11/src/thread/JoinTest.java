@@ -26,6 +26,7 @@ public class JoinTest extends Thread {
         jt1.start();
         jt2.start();
         
+        
         try {
             jt1.join();
             jt2.join();
@@ -33,6 +34,7 @@ public class JoinTest extends Thread {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        
         
         System.out.println(jt1.total);
         System.out.println(jt2.total);
